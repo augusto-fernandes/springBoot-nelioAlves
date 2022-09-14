@@ -73,6 +73,14 @@ public class Product implements Serializable {
         return categories;
     }
 
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -85,4 +93,5 @@ public class Product implements Serializable {
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }
